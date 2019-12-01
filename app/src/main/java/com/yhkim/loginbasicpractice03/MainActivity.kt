@@ -1,5 +1,6 @@
 package com.yhkim.loginbasicpractice03
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -21,6 +22,10 @@ class MainActivity : AppCompatActivity() {
 
                 if(inputPw == "pw123") {
                     Toast.makeText(this, "관리자 입니다.", Toast.LENGTH_SHORT).show()
+
+                    val intent = Intent(this, UserInfoActivity::class.java)
+                    startActivity(intent)
+
                 } else {
                     Toast.makeText(this, "관리자 비번이 틀렸습니다.", Toast.LENGTH_SHORT).show()
                 }
