@@ -23,9 +23,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="63dp"
+        android:hint="ID"
         android:inputType="textEmailAddress"
-        android:textSize="16sp"
-        android:hint="ID" />
+        android:textSize="16sp" />
 
     <EditText
         android:id="@+id/pwEdt"
